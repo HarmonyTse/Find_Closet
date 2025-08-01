@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload Image</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Find Closet</h1>
+            <h2>Upload a photo of your closet to identify the clothes inside</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input id="UploadButton" type="file" name="image_file" accept="image/*" required>
+                <input id="SubmitButton" type="submit" value="Upload Image">
+            </form>
+        </div>
+    </body>
+
+</html>
